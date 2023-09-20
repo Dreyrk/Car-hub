@@ -2,7 +2,7 @@ import CarCard from "./components/CarCard";
 import CustomFilter from "./components/CustomFilter";
 import Hero from "./components/Hero";
 import SearchBar from "./components/SearchBar";
-import { fetchCars } from "./utils/fetchCars";
+import { fetchCars } from "../utils/fetchCars";
 
 export default async function Home() {
   const allCars = await fetchCars();

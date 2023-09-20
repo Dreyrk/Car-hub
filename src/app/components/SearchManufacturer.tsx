@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState, Fragment } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 
-import { SearchManufacturerProps } from "../types";
-import { manufacturers } from "../constants";
-import cleanStr from "../utils/cleanStr";
+import { SearchManufacturerProps } from "../../types/props";
+import { manufacturers } from "../../constants";
+import cleanStr from "../../utils/cleanStr";
 
 export default function SearchManufacturer({
   manufacturer,
@@ -35,7 +35,7 @@ export default function SearchManufacturer({
             />
           </Combobox.Button>
           <Combobox.Input
-            className="search-manufacturer__input"
+            className="search-manufacturer__input border-r border-gray-100 "
             placeholder="Volkswagen"
             displayValue={(manufacturer: string) => manufacturer}
             onChange={(e) => setQuery(e.target.value)}
