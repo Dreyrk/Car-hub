@@ -15,10 +15,6 @@ export default function Footer() {
             height={18}
             className="object-contain"
           />
-          <p className="text-base text-gray-700">
-            Carhub 2023 <br />
-            All rights reserved &copy;
-          </p>
         </div>
         <div className="footer__links">
           {footerLinks.map((link) => (
@@ -35,16 +31,18 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
-          <p>@2023 Carhub. All Rights Reserved</p>
-          <div className="footer__copyrights-link">
-            <Link href={"/"} className="text-gray-500">
-              Privacy policy
-            </Link>
-            <Link href={"/"} className="text-gray-500">
-              Terms of Use
-            </Link>
-          </div>
+      </div>
+      <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
+        <p className="text-base font-light text-gray-700">
+          @2023 Carhub. All Rights Reserved &copy;
+        </p>
+        <div className="footer__copyrights-link">
+          <Link href={"/"} className="text-gray-500">
+            Privacy policy
+          </Link>
+          <Link href={"/"} className="text-gray-500">
+            Terms of Use
+          </Link>
         </div>
       </div>
     </footer>
